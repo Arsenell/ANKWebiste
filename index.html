@@ -20,7 +20,7 @@
 
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">☰</button>
     <nav id="nav" class="nav">
-      <a href="#projects">Clients & Partners</a>
+      <a href="#clients-partners-heading">Clients & Partners</a>
       <a href="#extras">Social Media</a>
 
       <a class="btn btn-small" href="#contact">Contact Us</a>
@@ -31,11 +31,8 @@
     <!-- Hero -->
     <section id="top" class="hero">
       <div class="hero-inner">
-        <h1>ANK <span class="accent">Tech</span>.</h1>
+        <h1>ANK <span class="accent">Tech.</span></h1>
         <p class="sub">We develop <strong>Apps</strong>, create <strong>Websites</strong>, and assist you in <strong>all your computer-related needs.</strong></p>
-        <div class="cta">
-          <a class="btn" href="#contact">Work with us</a>
-          <a class="btn btn-ghost" href="#projects">Clients & Partners</a>
         </div>
       </div>
     </section>
@@ -92,13 +89,32 @@ Our services include:</p>
       </ul>
     </article>
 
-
-
-
+  <div class="service-cta">
+    <a class="btn" href="#contact">Get a quote</a>
+  </div>
 </section>
-    <!-- Featured Work -->
-    <section class="section" aria-labelledby="featured-heading">
-      <h2 id="featured-heading">Featured Projects</h2>
+
+<!-- Company Stats -->
+<section class="section alt">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; max-width: 800px; margin: 0 auto;">
+    <div style="text-align: center;">
+      <h3 style="font-size: 2.5rem; color: var(--brand); margin: 0;">50+</h3>
+      <p style="color: var(--muted); margin: 8px 0 0;">Projects Completed</p>
+    </div>
+    <div style="text-align: center;">
+      <h3 style="font-size: 2.5rem; color: var(--brand); margin: 0;">24/7</h3>
+      <p style="color: var(--muted); margin: 8px 0 0;">Support Available</p>
+    </div>
+    <div style="text-align: center;">
+      <h3 style="font-size: 2.5rem; color: var(--brand); margin: 0;">100%</h3>
+      <p style="color: var(--muted); margin: 8px 0 0;">Client Satisfaction</p>
+    </div>
+  </div>
+</section>
+
+<!-- Clients & Partners -->
+<section id="clients-partners" class="section" aria-labelledby="clients-partners-heading">
+      <h2 id="clients-partners-heading">Clients & Partners</h2>
       <div class="featured-grid">
         <!-- Repeat cards as needed -->
         <a class="feature-card" href="https://flipperuniverse.com" target="_blank" rel="noopener">
@@ -125,21 +141,21 @@ Our services include:</p>
 
 <!-- Contact -->
 <section id="contact" class="section contact" aria-labelledby="contact-heading">
-  <h2 id="contact-heading">Get in touch</h2>
-  <p>We reply within one business day.</p>
+  <h2 id="contact-heading">Contact Our Team Today</h2>
+  <p>Fill out this form and our team will respond to you promptly.</p>
 
   <!-- Replace "youremail@example.com" with your actual email -->
   <form id="contactForm" action="https://formsubmit.co/arsenebaidoo@hotmail.com" method="POST">
     <div class="form-row">
-      <label for="name">Your Name</label>
+      <label for="name">Name</label>
       <input id="name" name="name" type="text" required autocomplete="name">
     </div>
     <div class="form-row">
-      <label for="email">Your Email</label>
+      <label for="email">Business Email</label>
       <input id="email" name="email" type="email" required autocomplete="email">
     </div>
     <div class="form-row">
-      <label for="message">Your Message</label>
+      <label for="message">How can we help you?</label>
       <textarea id="message" name="message" rows="6" required></textarea>
     </div>
 
@@ -148,7 +164,7 @@ Our services include:</p>
     <input type="hidden" name="_captcha" value="false"> <!-- disables Captcha -->
     <input type="hidden" name="_next" value="https://anktech.uk/thank-you.html"> <!-- redirect after submit -->
 
-    <button class="btn" type="submit">Work with us</button>
+    <button class="btn" type="submit">Send Message</button>
     <p id="formStatus" role="status" aria-live="polite"></p>
   </form>
 
@@ -167,3 +183,4 @@ Our services include:</p>
   <script src="main.js" defer></script>
 </body>
 </html>
+
