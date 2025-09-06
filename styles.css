@@ -190,7 +190,7 @@ a:hover{text-decoration:underline}
   color:inherit;
   box-shadow:var(--shadow); 
   transition:transform .12s ease;
-  max-width:400px;
+  max-width:280px;
   width:100%;
 }
 .feature-card:hover{transform:translateY(-2px)}
